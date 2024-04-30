@@ -9,8 +9,8 @@
 #define RELAY_PIN_1 13
 #define RELAY_PIN_2 12
 
-const char* ssid = "KazuyoSan";
-const char* password = "akuajayangtau";
+const char* ssid = "";
+const char* password = "";
 const char* mqtt_server = "35.239.128.20";
 const int mqtt_port = 1883;
 const char* mqtt_client_id = "YourClientID11";
