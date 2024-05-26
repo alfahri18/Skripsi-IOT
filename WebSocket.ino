@@ -11,7 +11,7 @@
 
 const char* ssid = "KazuyoSan";
 const char* password = "akuajayangtau";
-const char* websocket_server_host = "35.239.128.20";
+const char* websocket_server_host = "";
 const uint16_t websocket_server_port = 80;
 
 int sensorValue = 0;
@@ -70,7 +70,7 @@ void loop() {
   sensorValue = analogRead(PH_SENSOR_PIN);
   int humidity = dht.readHumidity();
   int temperature = dht.readTemperature();
-  int soilMoisture =  map(value, 0, 4095, 0, 100);// Membaca data dari sensor kelembaban tanah
+  int soilMoisture =  value;
   phValue = (-0.0139 * sensorValue) + 7.7851;
 
   // Send sensor data to WebSocket server
