@@ -108,7 +108,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   sensorValue = analogRead(PH_SENSOR_PIN);
   int humidity = dht.readHumidity();
   int temperature = dht.readTemperature();
-  int soilMoisture =  map(value, 0, 4095, 0, 100);// Membaca data dari sensor kelembaban tanah
+  int soilMoisture =  value;
   phValue = (-0.0139 * sensorValue) + 7.7851;
 
   if (isnan(humidity) || isnan(temperature)) {
