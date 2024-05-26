@@ -11,7 +11,7 @@
 
 const char* ssid = "";
 const char* password = "";
-const char* mqtt_server = "35.239.128.20";
+const char* mqtt_server = "";
 const int mqtt_port = 1883;
 const char* mqtt_client_id = "YourClientID11";
 int sensorValue = 0;
